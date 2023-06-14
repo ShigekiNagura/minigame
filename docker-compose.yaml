@@ -1,0 +1,8 @@
+version: "3"
+services:
+  go:
+    build: ./build
+    tty: true
+    volumes:
+      - .:/go/src/app
+    working_dir: /go/src/app
